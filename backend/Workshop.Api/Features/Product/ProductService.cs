@@ -44,14 +44,26 @@ namespace Workshop.Api.Features.Product
             };
         }
 
-        public async Task<ProductResponseDTO> CreateProducts(CreateProductRequestDTO createProductDTO)
+        public async Task<ProductResponseDTO?> CreateProducts(CreateProductRequestDTO createProductDTO)
         {
-            await productRepository.CreateAsync(new ProductEntity
+            ProductEntity product = await productRepository.CreateAsync(new ProductEntity
             {
                 Name = createProductDTO.Name,
                 Price = createProductDTO.Price,
                 Stock = createProductDTO.Stock
             });
+
+            if (product == null)
+                return null;
+
+            return new ProductResponseDTO
+            {
+                id = product.Id,
+                name = product.Name,
+                CreatedAt = product.CreatedAt,
+                price = product.Price,
+                stock = product.Stock,
+            };
         }
     }
 }

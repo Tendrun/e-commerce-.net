@@ -6,6 +6,6 @@ namespace Workshop.Api.Features.Product
     {
         public Task<IReadOnlyList<ProductResponseDTO>> products();
         public Task<ProductResponseDTO?> products(int id);
-        public Task<IActionResult> CreateProducts(CreateProductRequestDTO createProductDTO);
+        public Task<ProductResponseDTO?> CreateProducts(CreateProductRequestDTO createProductDTO);
     }
 }

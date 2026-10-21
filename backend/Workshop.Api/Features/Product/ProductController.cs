@@ -2,6 +2,8 @@
 
 namespace Workshop.Api.Features.Product
 {
+    [ApiController]
+    [Route("api/products")]
     public class ProductController : Controller
     {
         IProductService productService;
@@ -18,7 +20,7 @@ namespace Workshop.Api.Features.Product
             return Ok(products);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id:int}")]
         public async Task<IActionResult> products(int id)
         {
             var product = await productService.products(id);
@@ -32,7 +34,12 @@ namespace Workshop.Api.Features.Product
         [HttpPost]
         public async Task<IActionResult> products(CreateProductRequestDTO createProductDTO)
         {
-            await productService.CreateProducts(createProductDTO);
+            ProductResponseDTO? productResponse = await productService.CreateProducts(createProductDTO);
+
+            if (productResponse == null)
+                return BadRequest();
+
+            return Ok(productResponse);
         }
     }
 }
