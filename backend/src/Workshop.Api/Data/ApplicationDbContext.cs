@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Workshop.Api.Features.Product;
+using Workshop.Domain.Features.Product;
 
 namespace Workshop.Api.Data
 {

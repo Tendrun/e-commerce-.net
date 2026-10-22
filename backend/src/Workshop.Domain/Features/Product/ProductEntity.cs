@@ -1,4 +1,4 @@
-﻿namespace Workshop.Api.Features.Product
+﻿namespace Workshop.Domain.Features.Product
 {
     public class ProductEntity
     {

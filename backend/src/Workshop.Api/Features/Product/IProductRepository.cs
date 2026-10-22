@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Workshop.Domain.Features.Product;
 
 namespace Workshop.Api.Features.Product
 {

@@ -31,7 +31,7 @@ flowchart LR
     S --> R[ProductRepository]
     R --> Db[ApplicationDbContext]
     Db --> P[(PostgreSQL 16)]
-
+```
 ## New
 global.json
-Solution added 
+Solution added Domain, infrastructure, Application, API
