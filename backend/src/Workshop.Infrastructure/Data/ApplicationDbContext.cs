@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Workshop.Domain.Features.Product;
 
-namespace Workshop.Api.Data
+namespace Workshop.Infrastructure.Data
 {
     public class ApplicationDbContext : DbContext
     {

@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
+using Workshop.Application.Features.Product;
+
 namespace Workshop.Api.Features.Product
 {
     [ApiController]

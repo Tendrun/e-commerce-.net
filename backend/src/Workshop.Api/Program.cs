@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using Workshop.Api.Data;
 using Workshop.Api.Features.Product;
+using Workshop.Application.Features.Product;
+using Workshop.Infrastructure.Data;
+using Workshop.Infrastructure.Features.Product;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,8 +1,9 @@
 ﻿using Workshop.Domain.Features.Product;
 using Microsoft.EntityFrameworkCore;
-using Workshop.Api.Data;
+using Workshop.Application.Features.Product;
+using Workshop.Infrastructure.Data;
 
-namespace Workshop.Api.Features.Product
+namespace Workshop.Infrastructure.Features.Product
 {
     public class ProductRepository : IProductRepository
     {

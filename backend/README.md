@@ -33,5 +33,6 @@ flowchart LR
     Db --> P[(PostgreSQL 16)]
 ```
 ## New
-global.json
-Solution added Domain, infrastructure, Application, API
+1. global.json
+2. Solution .slnx added
+3. added Domain, infrastructure, Application, API

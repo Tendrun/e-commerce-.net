@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-
-namespace Workshop.Api.Features.Product
+﻿namespace Workshop.Application.Features.Product
 {
     public interface IProductService
     {

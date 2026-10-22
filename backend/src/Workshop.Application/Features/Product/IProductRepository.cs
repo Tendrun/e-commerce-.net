@@ -1,6 +1,6 @@
 ﻿using Workshop.Domain.Features.Product;
 
-namespace Workshop.Api.Features.Product
+namespace Workshop.Application.Features.Product
 {
     public interface IProductRepository
     {

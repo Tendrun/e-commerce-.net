@@ -1,4 +1,4 @@
-﻿namespace Workshop.Api.Features.Product
+﻿namespace Workshop.Application.Features.Product
 {
     public class CreateProductRequestDTO
     {
